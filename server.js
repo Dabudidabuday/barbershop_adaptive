@@ -11,10 +11,11 @@ nunjucks.configure({
   express: app
 });
 
+
 app.get('/', (request, response) => {
-  response.render('relative/path/to/index.njk')
+  response.render('relative/path/to/index.njk');
 });
 
-app.listen(portm function() {
+app.listen(port, function() {
   console.log ('we are on ' + port);
 });
