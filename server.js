@@ -13,7 +13,7 @@ nunjucks.configure({
 
 
 app.get('/', (request, response) => {
-  response.render('relative/path/to/index.njk');
+  response.render('layouts/HomePage/index.njk';
 });
 
 app.listen(port, function() {
